@@ -1067,7 +1067,6 @@ class syntax_plugin_dir extends DokuWiki_Syntax_Plugin {
      */
     function _tableOpen() {
         $rdr = $this->rdr;
-        $rdr->_counter['row_counter'] = 0;
         
         if($this->modeIsLatex) {
             $rdr->_current_tab_cols = 0;
